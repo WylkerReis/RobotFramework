@@ -178,7 +178,7 @@ E informo campos obrigatórios
       END
       Wait Until Element Is Not Visible   xpath: //*[@id="modal-loading"]  40
       Sleep      5
-      Input Text          id:formMestreDetalhe:dataCriacaoId_input      '16062021060000'
+      Input Text          id:formMestreDetalhe:dataCriacaoId_input      '${data}'
       LOG      '${data}'
       Press Keys             id:formMestreDetalhe:dataCriacaoId_input       RETURN
       IF   '${manutencao}' == 'Sim'
